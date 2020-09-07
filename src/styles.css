@@ -1,0 +1,97 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li.user {
+  margin-left: 0.5rem;
+  border-radius: 25px;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #ddd;
+}
+
+.kanban {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.kanban section {
+  width: 33%;
+  border: solid gray 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks {
+  border: solid #aaa 1px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.task {
+ cursor: pointer;
+ padding: 4px;
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+ align-items: start;
+}
+
+.latetask {
+  border: solid red 2px;
+}
+
+.earlytask {
+  border: solid green 2px;
+}
+
+.taskdescription{
+  font-size: 20px;
+}
+
+.taskdue {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.taskassigned {
+  float: right;
+  align-self: flex-end;
+}
+
+.newtask {
+  position: absolute;
+  z-index: 20;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000d9;
+}
+
+.newtask div {
+  border: solid gray 1px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 4rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,2 +1,2 @@
-# kanbanBoard
+# kanaban-board
 Created with CodeSandbox
